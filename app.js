@@ -6,9 +6,7 @@ const port = process.env.PORT || 3001;
 
 
 app.use((req, res, next) => {
-    for(var i=0; i<5000; i++){
-        console.log(i);
-    }
+    
     next();
 })
 

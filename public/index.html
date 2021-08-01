@@ -7,7 +7,7 @@
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="owl.carousel.js" ></script>
+    <script src="lazyload.min.js" ></script>
     <link rel="stylesheet" href="https://cdn.dsmcdn.com/web/production/css-style.min.b9963567.css" />
     <link rel="stylesheet" href="https://cdn.dsmcdn.com/frontend/web/production/common-1a346a7334.style.css" />
     <link rel="stylesheet" href="https://cdn.dsmcdn.com/web/production/account-navigation-v2.style.e9f2000b844b7d0aaaf73a7497c60d7d.css" />
@@ -26,25 +26,25 @@
   <body>
     <h1>Hello, world!</h1>
 
-    <img src="https://kablosuzbeyin.com/wp-content/uploads/2021/06/IMG_9113-768x1024.jpg" />
+    <img class="lazy"  src="https://floratatil.com/wp-content/uploads/2021/06/placeholder-61.png" data-src="https://kablosuzbeyin.com/wp-content/uploads/2021/06/IMG_9113-768x1024.jpg" loading="lazy"/>
 
     <!-- Set up your HTML -->
     <div class="owl-carousel">
         <div>
-            <img src="https://i.pinimg.com/originals/f9/f4/7e/f9f47e683582e52b1ba1101d7d82058d.jpg" />
+            <img class="lazy"  src="https://floratatil.com/wp-content/uploads/2021/06/placeholder-61.png" data-src="https://i.pinimg.com/originals/f9/f4/7e/f9f47e683582e52b1ba1101d7d82058d.jpg" loading="lazy"/>
         </div>
         <div> 
-            <img src="https://dogexper.com/wp-content/uploads/2021/05/bc1.jpg" />
+            <img class="lazy"  src="https://floratatil.com/wp-content/uploads/2021/06/placeholder-61.png" data-src="https://dogexper.com/wp-content/uploads/2021/05/bc1.jpg"  loading="lazy"/>
         </div>
         <div> 
-            <img src="https://dikkatkopekvar.org/wp-content/uploads/2017/11/be73d6e94294b883aaf51ca7166c6cf1.jpg" />    
+            <img class="lazy"  src="https://floratatil.com/wp-content/uploads/2021/06/placeholder-61.png" data-src="https://dikkatkopekvar.org/wp-content/uploads/2017/11/be73d6e94294b883aaf51ca7166c6cf1.jpg" loading="lazy"/>    
         </div>
-        <div> <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+        <div> <marquee direction="down" behavior="alternate" style="border:solid">
             <marquee behavior="alternate">
               This text will bounce
             </marquee>
         </marquee> </div>
-        <div> <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+        <div> <marquee direction="down"  behavior="alternate" style="border:solid">
             <marquee behavior="alternate">
               This text will bounce
             </marquee>
@@ -54,17 +54,21 @@
         <div> Your Content </div>
     </div>
 
-    <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+    <marquee direction="down"  behavior="alternate" style="border:solid">
         <marquee behavior="alternate">
           This text will bounce
         </marquee>
     </marquee>
 
-    <img src="https://images3.alphacoders.com/857/thumb-1920-857335.jpg" />
-    <img src="https://cdn.dsmcdn.com/ty150/big-wallpaper/alena-aenami-castle2k.jpg" />
+    <img class="lazy" src="https://floratatil.com/wp-content/uploads/2021/06/placeholder-61.png" data-src="https://images3.alphacoders.com/857/thumb-1920-857335.jpg" loading="lazy"/>
+    <img class="lazy"  src="https://floratatil.com/wp-content/uploads/2021/06/placeholder-61.png" data-src="https://cdn.dsmcdn.com/ty150/big-wallpaper/alena-aenami-castle2k.jpg"  loading="lazy"/>
     
     <script>
+
+    
+
          $(window).on('load', function () {
+            var lazyLoadInstance = new LazyLoad({ });
             $(".owl-carousel").owlCarousel();
         });
 
